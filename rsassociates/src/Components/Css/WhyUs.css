@@ -1,0 +1,159 @@
+/* Section styling */
+.whyus-section {
+  padding: 4rem 1rem;
+  text-align: center;
+  background-color: #f9fafb; /* light background */
+}
+
+/* Heading */
+.whyus-section h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+  color: #1e293b; /* slate-800 */
+}
+
+/* Subtext */
+.whyus-section p {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #4b5563; /* gray-600 */
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Card grid */
+.whyus-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Card styling */
+.whyus-card {
+  padding: 1.5rem;
+  background-color: #eff6ff; /* blue-50 */
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.whyus-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 14px rgba(0, 0, 0, 0.15);
+}
+
+/* Card heading */
+.whyus-card h3 {
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #1e3a8a; /* blue-900 */
+}
+
+/* Card text */
+.whyus-card p {
+  color: #4b5563; /* gray-600 */
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+}
+
+/* ------------------------- */
+/* 📱 Responsive Breakpoints */
+/* ------------------------- */
+
+/* 0 – 575px → Mobile (portrait) */
+@media (max-width: 575px) {
+  .whyus-section h2 {
+    font-size: 1.5rem;
+  }
+  .whyus-section p {
+    font-size: 0.9rem;
+  }
+  .whyus-card {
+    padding: 1rem;
+  }
+  .whyus-card h3 {
+    font-size: 1rem;
+  }
+  .whyus-card p {
+    font-size: 0.85rem;
+  }
+}
+
+/* 576 – 767px → Mobile (landscape) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .whyus-section h2 {
+    font-size: 1.75rem;
+  }
+  .whyus-section p {
+    font-size: 0.95rem;
+  }
+  .whyus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 768 – 991px → Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .whyus-section h2 {
+    font-size: 2rem;
+  }
+  .whyus-section p {
+    font-size: 1rem;
+  }
+  .whyus-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 992 – 1199px → Small desktops/laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .whyus-section h2 {
+    font-size: 2.25rem;
+  }
+  .whyus-section p {
+    font-size: 1.05rem;
+  }
+  .whyus-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 1200 – 1399px → Desktops */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .whyus-section h2 {
+    font-size: 2.5rem;
+  }
+  .whyus-section p {
+    font-size: 1.1rem;
+  }
+  .whyus-card h3 {
+    font-size: 1.2rem;
+  }
+}
+
+/* 1400px+ → Large screens, TVs */
+@media (min-width: 1400px) {
+  .whyus-section h2 {
+    font-size: 2.75rem;
+  }
+  .whyus-section p {
+    font-size: 1.15rem;
+  }
+  .whyus-grid {
+    gap: 2rem;
+  }
+  .whyus-card {
+    padding: 2rem;
+  }
+  .whyus-card h3 {
+    font-size: 1.3rem;
+  }
+  .whyus-card p {
+    font-size: 1rem;
+  }
+}

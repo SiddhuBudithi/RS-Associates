@@ -1,0 +1,96 @@
+.life-insurance-section {
+  padding: 60px 10%;
+  text-align: center;
+  background: #fff;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Title */
+.life-title {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f3c88;
+  margin-bottom: 15px;
+}
+
+.life-description {
+  font-size: 16px;
+  line-height: 1.6;
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.read-link {
+  color: #0073e6;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* Sub Heading */
+.life-subtitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: #1f3c88;
+  margin-top: 40px;
+}
+
+.life-subdesc {
+  font-size: 16px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+/* Cards */
+.life-card-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+  justify-content: center;
+}
+
+.life-card {
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  text-align: left;
+}
+
+.life-card:hover {
+  transform: translateY(-5px);
+}
+
+.life-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.life-card-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+}
+
+.life-card-content p {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-btn {
+  background: #f50057;
+  border: none;
+  color: white;
+  font-size: 18px;
+  padding: 6px 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.card-btn:hover {
+  background: #d4004a;
+}

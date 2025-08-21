@@ -1,0 +1,161 @@
+/* FAQ.css */
+
+.faq {
+  padding: 80px 20px;
+  background: #f9fafc;
+}
+
+.faq h2 {
+  font-size: 2.2rem;
+  font-weight: bold;
+  color: #222;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.faq .faq-container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.faq-item {
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  padding: 16px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.faq-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+}
+
+.faq-item button {
+  width: 100%;
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-item button span {
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #007bff; /* blue accent */
+}
+
+.faq-item p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* ============================= */
+/* 📱 Responsive Breakpoints */
+/* ============================= */
+
+/* 0–575px (Mobile Portrait) */
+@media (max-width: 575.98px) {
+  .faq {
+    padding: 50px 15px;
+  }
+
+  .faq h2 {
+    font-size: 1.6rem;
+    margin-bottom: 25px;
+  }
+
+  .faq-item {
+    padding: 12px 15px;
+  }
+
+  .faq-item button {
+    font-size: 1rem;
+  }
+
+  .faq-item p {
+    font-size: 0.9rem;
+  }
+}
+
+/* 576–767px (Mobile Landscape) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .faq h2 {
+    font-size: 1.8rem;
+  }
+
+  .faq-item button {
+    font-size: 1.05rem;
+  }
+
+  .faq-item p {
+    font-size: 0.92rem;
+  }
+}
+
+/* 768–991px (Tablet) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .faq h2 {
+    font-size: 2rem;
+  }
+
+  .faq-item {
+    padding: 14px 18px;
+  }
+
+  .faq-item button {
+    font-size: 1.1rem;
+  }
+
+  .faq-item p {
+    font-size: 0.95rem;
+  }
+}
+
+/* 992–1199px (Small Desktops/Laptops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .faq h2 {
+    font-size: 2.1rem;
+  }
+
+  .faq .faq-container {
+    max-width: 700px;
+  }
+}
+
+/* 1200–1399px (Desktops) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .faq h2 {
+    font-size: 2.2rem;
+  }
+
+  .faq .faq-container {
+    max-width: 850px;
+  }
+}
+
+/* 1400px+ (Large Screens/TVs) */
+@media (min-width: 1400px) {
+  .faq h2 {
+    font-size: 2.4rem;
+  }
+
+  .faq .faq-container {
+    max-width: 1000px;
+  }
+
+  .faq-item p {
+    font-size: 1rem;
+  }
+}

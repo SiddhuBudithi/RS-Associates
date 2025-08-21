@@ -1,0 +1,149 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background: white;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+}
+
+.navbar-logo .logos {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #3c00c7;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-weight: 500;
+  color: #333;
+  transition: 0.3s;
+}
+
+.nav-links a:hover,
+.nav-links .active {
+  color: #2563eb;
+}
+
+/* ✅ Hamburger Icon */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background: #333;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+/* Animate Hamburger */
+.hamburger.open span:nth-child(1) {
+  transform: rotate(45deg) translateY(8px);
+}
+.hamburger.open span:nth-child(2) {
+  opacity: 0;
+}
+.hamburger.open span:nth-child(3) {
+  transform: rotate(-45deg) translateY(-8px);
+}
+
+/* ============================= */
+/* 📱 Responsive Breakpoints */
+/* ============================= */
+
+/* ============================= */
+/* 📱 Mobile Responsive Menu */
+/* ============================= */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: white;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 220px;
+    height: 0;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    transition: height 0.3s ease;
+    padding: 0;
+  }
+
+  .nav-links.active {
+    height: auto;
+    padding: 15px;
+  }
+
+  .nav-links li {
+    width: 100%;
+    padding: 10px 0;
+  }
+
+  .nav-links a {
+    display: block;
+    width: 100%;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .join-btn {
+    background: #2563eb;
+    color: #fff !important;
+    padding: 8px 12px;
+    border-radius: 4px;
+  }
+}
+
+/* 992–1199px (Small Desktops/Laptops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .navbar-logo {
+    font-size: 1.5rem;
+  }
+
+  .nav-links {
+    gap: 20px;
+  }
+}
+
+/* 1200–1399px (Desktops) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .navbar-logo {
+    font-size: 1.6rem;
+  }
+}
+
+/* 1400px+ (Large Screens/TVs) */
+@media (min-width: 1400px) {
+  .navbar-logo {
+    font-size: 1.8rem;
+  }
+
+  .nav-links a {
+    font-size: 1.1rem;
+  }
+}

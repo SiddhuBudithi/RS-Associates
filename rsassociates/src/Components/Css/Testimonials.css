@@ -1,0 +1,182 @@
+/* Testimonials.css */
+
+.testimonials-section {
+  padding: 4rem 1rem;
+  background: #f9fbfd;
+}
+
+.testimonials-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.testimonials-subtitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2563eb;
+  margin-bottom: 0.5rem;
+}
+
+.testimonials-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #0f172a;
+}
+
+.testimonials-title span {
+  color: #1e293b;
+}
+
+.testimonials-desc {
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  color: #475569;
+  font-size: 1rem;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+}
+
+.testimonial-card {
+  background: #fff;
+  border-radius: 16px;
+  padding: 2rem;
+  text-align: left;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.testimonial-header {
+  margin-bottom: 1rem;
+}
+
+.testimonial-image-wrapper {
+  position: relative;
+  display: inline-block;
+  border: 3px solid #f97316; /* orange border */
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+}
+
+.testimonial-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  display: block;
+}
+
+.quote-icon {
+  position: absolute;
+  bottom: -10px;
+  right: -10px;
+  background: #fff;
+  color: #2563eb;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 0.25rem 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.testimonial-stars {
+  color: #fbbf24; /* gold */
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.testimonial-name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-top: 0.25rem;
+  color: #0f172a;
+}
+
+.testimonial-location {
+  font-size: 0.9rem;
+  color: #475569;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.testimonial-feedback {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #334155;
+}
+
+/* ===================== Responsive Breakpoints ===================== */
+
+/* 0 – 575px → Mobile (portrait phones) */
+@media (max-width: 575px) {
+  .testimonials-title {
+    font-size: 1.5rem;
+  }
+  .testimonials-desc {
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+  }
+  .testimonial-card {
+    padding: 1.5rem;
+    text-align: center;
+  }
+  .testimonial-image {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* 576 – 767px → Mobile (landscape) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .testimonials-title {
+    font-size: 1.7rem;
+  }
+  .testimonial-card {
+    padding: 1.75rem;
+  }
+}
+
+/* 768 – 991px → Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .testimonials-title {
+    font-size: 1.8rem;
+  }
+  .testimonial-card {
+    padding: 2rem;
+  }
+}
+
+/* 992 – 1199px → Small desktops/laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .testimonials-title {
+    font-size: 2rem;
+  }
+}
+
+/* 1200 – 1399px → Desktops */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .testimonials-title {
+    font-size: 2.2rem;
+  }
+}
+
+/* 1400px+ → Large screens, TVs */
+@media (min-width: 1400px) {
+  .testimonials-title {
+    font-size: 2.5rem;
+  }
+  .testimonial-card {
+    padding: 2.5rem;
+  }
+}

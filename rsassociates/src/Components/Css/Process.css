@@ -1,0 +1,154 @@
+/* Process.css */
+
+.process-section {
+  padding: 4rem 1rem;
+  background-color: #f9fafb; /* Light gray background */
+}
+
+.process-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.process-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  color: #111827; /* Dark text */
+}
+
+.process-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.process-step {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.process-step:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.12);
+}
+
+.process-step-id {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #2563eb; /* Blue */
+  margin-bottom: 0.5rem;
+}
+
+.process-step-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #111827;
+}
+
+.process-step-desc {
+  font-size: 1rem;
+  color: #4b5563; /* Gray text */
+  line-height: 1.5;
+}
+
+/* ===================== Responsive Breakpoints ===================== */
+
+/* 0–575px → Mobile (portrait phones) */
+@media (max-width: 575px) {
+  .process-title {
+    font-size: 1.5rem;
+  }
+
+  .process-step {
+    padding: 1rem;
+  }
+
+  .process-step-id {
+    font-size: 1.25rem;
+  }
+
+  .process-step-title {
+    font-size: 1rem;
+  }
+
+  .process-step-desc {
+    font-size: 0.9rem;
+  }
+}
+
+/* 576–767px → Mobile (landscape) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .process-title {
+    font-size: 1.75rem;
+  }
+
+  .process-step-id {
+    font-size: 1.4rem;
+  }
+
+  .process-step-title {
+    font-size: 1.1rem;
+  }
+}
+
+/* 768–991px → Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .process-title {
+    font-size: 1.85rem;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* 992–1199px → Small desktops/laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .process-title {
+    font-size: 2rem;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* 1200–1399px → Desktops */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .process-title {
+    font-size: 2.2rem;
+  }
+
+  .process-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* 1400px+ → Large screens, TVs */
+@media (min-width: 1400px) {
+  .process-title {
+    font-size: 2.5rem;
+  }
+
+  .process-step {
+    padding: 2rem;
+  }
+
+  .process-step-id {
+    font-size: 2rem;
+  }
+
+  .process-step-title {
+    font-size: 1.5rem;
+  }
+
+  .process-step-desc {
+    font-size: 1.1rem;
+  }
+}

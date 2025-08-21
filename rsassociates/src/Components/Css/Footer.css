@@ -1,0 +1,242 @@
+/* Footer.css */
+
+.footer {
+  background: #dddde9;
+  color: #000000;
+  padding: 60px 20px 30px;
+  font-family: Arial, sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-logo {
+  color: #ff6600; /* Accent color */
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.footer-about p {
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.footer-social a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #fff;
+  background: #222;
+  padding: 10px;
+  border-radius: 50%;
+  transition: 0.3s;
+}
+
+.footer-social a:hover {
+  background: #ff6600;
+  color: #fff;
+}
+
+.footer-links h3,
+.footer-contact h3,
+.footer-newsletter h3 {
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  color: #000000;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 10px;
+}
+
+.footer-links ul li a {
+  text-decoration: none;
+  color: #161515;
+  transition: 0.3s;
+}
+
+.footer-links ul li a:hover {
+  color: #ff6600;
+}
+
+.footer-contact p {
+  margin: 6px 0;
+  font-size: 0.95rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000000;
+}
+
+.footer-contact h4 {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #030303;
+}
+
+.footer-newsletter p {
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  color: #000000;
+}
+
+.newsletter-form {
+  display: flex;
+  margin-bottom: 15px;
+}
+
+.newsletter-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  outline: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.newsletter-form button {
+  padding: 10px 15px;
+  border: none;
+  background: #162447;
+  color: #fff;
+  cursor: pointer;
+  border-radius: 0 4px 4px 0;
+  transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+  background: #ff6600;
+}
+
+.footer-phone {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  border-top: 1px solid #222;
+  margin-top: 40px;
+  padding-top: 15px;
+  font-size: 0.9rem;
+  color: #c5b5b5;
+}
+
+.footer-bottom p { 
+  color: #000000;
+}
+
+/* ============================= */
+/* 📱 Responsive Breakpoints */
+/* ============================= */
+
+/* 0–575px (Mobile Portrait) */
+@media (max-width: 575.98px) {
+  .footer {
+    padding: 40px 15px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .footer-logo {
+    font-size: 1.3rem;
+  }
+
+  .footer-about p,
+  .footer-newsletter p,
+  .footer-contact p {
+    font-size: 0.9rem;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+}
+
+/* 576–767px (Mobile Landscape) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+
+  .footer-logo {
+    font-size: 1.4rem;
+  }
+}
+
+/* 768–991px (Tablet) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .footer-container {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+  }
+
+  .footer-logo {
+    font-size: 1.5rem;
+  }
+}
+
+/* 992–1199px (Small Desktops/Laptops) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+  }
+
+  .footer-logo {
+    font-size: 1.6rem;
+  }
+}
+
+/* 1200–1399px (Desktops) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1100px;
+  }
+
+  .footer-logo {
+    font-size: 1.7rem;
+  }
+}
+
+/* 1400px+ (Large Screens/TVs) */
+@media (min-width: 1400px) {
+  .footer-container {
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1300px;
+  }
+
+  .footer-logo {
+    font-size: 1.8rem;
+  }
+
+  .footer-about p,
+  .footer-newsletter p,
+  .footer-contact p {
+    font-size: 1rem;
+  }
+}

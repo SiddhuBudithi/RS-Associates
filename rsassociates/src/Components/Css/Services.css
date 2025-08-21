@@ -1,0 +1,106 @@
+/* Services.css */
+
+.services {
+  padding: 80px 20px;
+  background: var(--white);
+  text-align: center;
+}
+
+.services h2 {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+}
+
+.services-grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  width: 280px;
+  transition: transform 0.2s;
+}
+
+.service-icon {
+  font-size: 40px;
+  color: var(--secondary-color); /* matches your theme */
+  margin-bottom: 15px;
+  transition: transform 0.3s;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+}
+
+.service-icon {
+  transform: scale(1.2);
+}
+
+.service-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  color: var(--secondary-color);
+}
+
+/* ===================== Responsive Breakpoints ===================== */
+
+/* 0 – 575px → Mobile (portrait phones) */
+@media (max-width: 575px) {
+  .services {
+    padding: 50px 15px;
+  }
+  .services h2 {
+    font-size: 24px;
+  }
+  .service-card {
+    width: 100%;
+  }
+}
+
+/* 576 – 767px → Mobile (landscape) */
+@media (min-width: 576px) and (max-width: 767px) {
+  .services h2 {
+    font-size: 26px;
+  }
+  .service-card {
+    width: 45%;
+  }
+}
+
+/* 768 – 991px → Tablet */
+@media (min-width: 768px) and (max-width: 991px) {
+  .services h2 {
+    font-size: 28px;
+  }
+  .service-card {
+    width: 40%;
+  }
+}
+
+/* 992 – 1199px → Small desktops/laptops */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .service-card {
+    width: 30%;
+  }
+}
+
+/* 1200 – 1399px → Desktops */
+@media (min-width: 1200px) and (max-width: 1399px) {
+  .service-card {
+    width: 25%;
+  }
+}
+
+/* 1400px+ → Large screens, TVs */
+@media (min-width: 1400px) {
+  .service-card {
+    width: 20%;
+  }
+}
