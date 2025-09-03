@@ -1,3 +1,5 @@
+//src/Pages/GalleryPage.jsx
+
 import { useEffect, useState } from "react";
 import "./GalleryPage.css";
 
@@ -7,7 +9,7 @@ export default function GalleryPage() {
 
   useEffect(() => {
     // Call your backend API that serves gallery data from MongoDB
-    fetch("http://localhost:5000/api/gallery") // replace with your backend URL
+    fetch(`${process.env.REACT_APP_API_URL}/api/gallery`)
       .then((res) => res.json())
       .then((data) => {
         setGallery(data);

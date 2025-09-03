@@ -11,7 +11,7 @@ const app = express();
 // Middleware
 app.use(
   cors({
-    origin: ["https://rsassociates.online"], // replace with your real domain
+    origin: ["https://rsassociates.online", "http://localhost:3000"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
