@@ -13,11 +13,19 @@
   width: 100%;
 }
 
-.navbar-logo .logos {
+/* .navbar-logo {
   font-size: 1.5rem;
   font-weight: bold;
   color: #3c00c7;
   text-decoration: none;
+} */
+
+/* Logo Styling */
+.rsa-logo {
+  height: 60px; /* Default for most screens */
+  width: auto;
+  object-fit: contain;
+  transition: height 0.3s ease-in-out;
 }
 
 .nav-links {
@@ -39,6 +47,36 @@
 .nav-links .active {
   color: #2563eb;
 }
+
+/* 🔥 Flashing Animation for Join Us Button */
+.flashing-btn {
+  display: inline-block;
+  background: #2563eb;
+  color: white !important;
+  padding: 8px 14px;
+  border-radius: 6px;
+  font-weight: bold;
+  cursor: pointer;
+  animation: flash 1s infinite alternate;
+  transition: transform 0.2s ease-in-out;
+}
+
+.flashing-btn:hover {
+  transform: scale(1.05);
+}
+
+/* ✨ Flash Keyframes */
+@keyframes flash {
+  0% {
+    background-color: #2563eb;
+    box-shadow: 0 0 5px rgba(37, 99, 235, 0.3);
+  }
+  100% {
+    background-color: #1e40af;
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.7);
+  }
+}
+
 
 /* ✅ Hamburger Icon */
 .hamburger {
@@ -145,5 +183,40 @@
 
   .nav-links a {
     font-size: 1.1rem;
+  }
+}
+
+/* 📱 Mobile (≤480px) */
+@media (max-width: 480px) {
+  .rsa-logo {
+    height: 40px; /* Slightly smaller for small phones */
+  }
+}
+
+/* 📱 Tablets (481px – 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .rsa-logo {
+    height: 45px; /* Moderate size for tablets */
+  }
+}
+
+/* 💻 Small Laptops (769px – 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .rsa-logo {
+    height: 50px; /* Keep consistent on small laptops */
+  }
+}
+
+/* 🖥️ Large Laptops / Desktops (1025px – 1399px) */
+@media (min-width: 1025px) and (max-width: 1399px) {
+  .rsa-logo {
+    height: 55px; /* Slightly bigger for large screens */
+  }
+}
+
+/* 🖥️💡 Extra Large Screens / TVs (≥1400px) */
+@media (min-width: 1400px) {
+  .rsa-logo {
+    height: 65px; /* Large but still balanced */
   }
 }

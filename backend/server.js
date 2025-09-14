@@ -2,10 +2,11 @@ import express from "express";
 import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
-import galleryRoutes from "./routes/gallery.routes.js";
+// import galleryRoutes from "./routes/gallery.routes.js";
+import contactRoute from "./routes/contact.routes.js";
 
 dotenv.config();
-
+ 
 const app = express();
 
 // Middleware
@@ -22,7 +23,8 @@ app.use(express.json());
 app.get("/", (req, res) => res.send("API is running"));
 
 // Routes
-app.use("/api/gallery", galleryRoutes);
+// app.use("/api/gallery", galleryRoutes);
+app.use("/contact", contactRoute);
 
 // MongoDB connection
 mongoose

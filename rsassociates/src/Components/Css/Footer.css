@@ -3,7 +3,7 @@
 .footer {
   background: #dddde9;
   color: #000000;
-  padding: 60px 20px 30px;
+  padding: 40px 20px 30px;
   font-family: Arial, sans-serif;
 }
 
@@ -15,18 +15,23 @@
   margin: 0 auto;
 }
 
-.footer-logo {
-  color: #ff6600; /* Accent color */
-  font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 15px;
+.foot-logo {
+  height: 70px; /* Default for most screens */
+  width: auto;
+  object-fit: contain;
+  transition: height 0.3s ease-in-out;
 }
 
 .footer-about p {
+  padding-left: 10px;
   font-size: 0.95rem;
   margin-bottom: 15px;
   line-height: 1.5;
   color: #000000;
+}
+
+.footer-social {
+  padding-left: 5px;
 }
 
 .footer-social a {

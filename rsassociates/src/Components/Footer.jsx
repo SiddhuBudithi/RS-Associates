@@ -2,6 +2,7 @@ import React from "react";
 import { FaFacebook, FaTwitter, FaInstagram, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 import './Css/Footer.css';
 import { NavLink } from "react-router-dom";
+import logo from "../images/rsa_logo_transp.png";
 
 const Footer = () => {
   return (
@@ -10,7 +11,11 @@ const Footer = () => {
         
         {/* About Section */}
         <div className="footer-about">
-          <h2 className="footer-logo">RS Associates</h2>
+          <img
+            src={logo}
+            alt="RS Associates Logo"
+            className="foot-logo"
+          />
           <p>
             RS Associates is a trusted financial services company offering
             insurance and loan solutions tailored to your needs.

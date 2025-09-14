@@ -8,10 +8,12 @@ import ServicesPage from './Pages/ServicesPage.jsx';
 import AboutPage from './Pages/AboutPage.jsx';
 import Footer from './Components/Footer.jsx';
 import Navbar from './Components/Navbar.jsx';
+import ScrollToTop from "./Components/ScrollToTop.jsx";
 
 function App() {
   return (
     <Router>
+       <ScrollToTop />
       <Navbar />
     <Routes>
     <Route path="/" element={<Homepage/>} />
