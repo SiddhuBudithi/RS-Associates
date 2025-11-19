@@ -23,7 +23,7 @@ export default function Contact() {
     setMessage("");
 
     try {
-      const res = await fetch("https://rsassociates.online/contact", {
+      const res = await fetch("https://backend-rsa.onrender.com/contact", {
       // const res = await fetch(`${process.env.REACT_APP_API_URL}/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
