@@ -24,7 +24,6 @@ export default function Contact() {
 
     try {
       const res = await fetch("https://backend-rsa.onrender.com/contact", {
-      // const res = await fetch(`${process.env.REACT_APP_API_URL}/contact`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
@@ -39,6 +38,7 @@ export default function Contact() {
         setMessage(`❌ Failed: ${data.error || "Something went wrong"}`);
       }
     } catch (error) {
+      console.error("Frontend send error:", error);
       setMessage("❌ Could not send message. Try again later.");
     }
 
