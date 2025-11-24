@@ -23,7 +23,7 @@ export default function Contact() {
     setMessage("");
 
     try {
-      const res = await fetch("https://backend-rsa.onrender.com/contact", {
+      const res = await fetch("https://contact-backend-165988010762.asia-south1.run.app", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(formData),
